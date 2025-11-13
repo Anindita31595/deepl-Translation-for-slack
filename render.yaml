@@ -1,0 +1,21 @@
+# Render configuration file
+# Note: Render doesn't have native Deno support, so we use Docker
+services:
+  - type: web
+    name: deepl-for-slack
+    env: docker
+    region: Singapore (Southeast Asia)
+    branch: master
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DEEPL_AUTH_KEY
+        sync: false
+      - key: DEEPL_TARGET_LANG
+        sync: false
+      - key: SLACK_BOT_TOKEN
+        sync: false
+      - key: SLACK_SIGNING_SECRET
+        sync: false
+      # PORT is automatically set by Render, don't override it
+    plan: free
+

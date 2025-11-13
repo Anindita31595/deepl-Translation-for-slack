@@ -1,0 +1,23 @@
+# Build artifacts
+dist
+package
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Slack CLI (optional - uncomment if you don't want to commit these)
+# .slack/apps.dev.json
+# .slack/apps.json

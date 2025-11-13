@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+DEPLOYMENT.md
+CODEOWNERS
+LICENSE
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+dist
+package
+node_modules
+
+# Slack CLI
+.slack/apps.dev.json
+.slack/apps.json
+
+# Test files (optional - include if you want to keep them)
+# *_test.ts
+
